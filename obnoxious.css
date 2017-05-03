@@ -9,7 +9,7 @@
  * Intensifies
  * - Slowly increases in shaking and madness
  */
-@keyframes intensifies {
+@keyframes shakeit {
   0% {
     transform: translate(0px, 0) rotate(0deg);
   }
@@ -315,9 +315,9 @@
   }
 }
 
-.intensifies {
-  animation-name: intensifies;
+.shakeit {
   animation-timing-function: ease-in;
-  animation-duration: 10s;
-  transform-origin: bottom middle;
+  transform-origin: bottom center;
+  animation-name: shakeit;
+  animation-duration: 12s;
 }
