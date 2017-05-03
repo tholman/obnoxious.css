@@ -1,0 +1,52 @@
+/**
+ * Animations
+ */
+
+.animated {
+  animation-fill-mode: both;
+}
+
+/**
+ * Intensifies
+ * - Slowly increases in shaking and madness
+ */
+
+@keyframes intensifies {
+  0% {
+    background: red;
+  }
+
+  5% {
+
+  }
+
+  10% {
+
+  }
+
+  15% {
+
+  }
+
+  20% {
+
+  }
+
+  25% {
+
+  }
+
+  30% {
+
+  }
+
+  35% {
+    background: blue;
+  }
+}
+
+.intensifies {
+  animation-name: intensifies;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}

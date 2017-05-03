@@ -1,0 +1,58 @@
+/*
+ * Obnoxious.CSS Demo Site
+ */
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+.center {
+  font-family: 'Montserrat', sans-serif;
+  transform: translateY(-50%);
+  padding-bottom: 30px;
+  text-align: center;
+  position: fixed;
+  margin: 0px;
+  width: 100%;
+  color: #222;
+  z-index: 1;
+  top: 50%;
+}
+
+.center h1 {
+    font-size: 70px;
+    margin: 0px;
+}
+
+.center .description {
+    font-family: monospace;
+    line-height: 22px;
+    font-size: 18px;
+    width: 380px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.center .links {
+    font-family: monospace;
+    letter-spacing: 0.3px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.center .links a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #777;
+  }
+      
+.center .links a:hover {
+    text-decoration: underline;
+}
