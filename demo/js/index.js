@@ -18,7 +18,10 @@
   function triggerAnimation() {
 
     var animation = selectBox.value;
-    header.className = "animated " + animation;
+    header.className = "";
+    setTimeout(function() {
+      header.className = "animated " + animation;
+    }, 10);
 
   }
 
