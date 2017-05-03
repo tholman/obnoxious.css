@@ -3,12 +3,12 @@
  */
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    height: 100%;
-    margin: 0px;
+  height: 100%;
+  margin: 0px;
 }
 
 .center {
@@ -24,34 +24,98 @@ body {
 }
 
 .center h1 {
-    font-size: 70px;
-    margin: 0px;
+  font-size: 70px;
+  margin: 0px;
 }
 
 .center .description {
-    font-family: monospace;
-    line-height: 22px;
-    font-size: 18px;
-    width: 370px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 25px;
+  font-family: monospace;
+  line-height: 22px;
+  font-size: 18px;
+  width: 370px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.select {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+select {
+  transition: background-color 200ms ease;
+  font-size: 14px;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: monospace;
+  padding-right: 30px;
+  position: relative;
+  outline: 0px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.select:after {
+  content: "▼";
+  padding: 14px 8px;
+  position: absolute;
+  right: 13px;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+  font-size: 9px;
+}
+
+button {
+  transition: background-color 200ms ease;
+  font-size: 14px;
+  padding: 10px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  background: #fff;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+button:hover,
+select:hover {
+  background-color: #eee;
 }
 
 .center .links {
-    font-family: monospace;
-    letter-spacing: 0.3px;
-    font-style: italic;
-    font-size: 14px;
+  padding-top: 60px;
+  font-family: monospace;
+  letter-spacing: 0.3px;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .center .links a {
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #777;
-  }
-      
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #777;
+}
+    
 .center .links a:hover {
     text-decoration: underline;
+}
+
+iframe {
+    margin-left: 14px;
+    margin-bottom: -5px;
 }
