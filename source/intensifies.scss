@@ -12,88 +12,28 @@
  */
 
 @keyframes intensifies {
-  0% {
-    transform: translate(0px, 0px) rotate(0deg);
-  }
 
-  5% {
-    transform: translate(-1px, 0px) rotate(-0.1deg);
-  }
+  @for $i from 0 through 100 {
+    #{$i * 1%} {
 
-  10% {
-    transform: translate(2px, 0px) rotate(0.2deg);
-  }
+      $sign: -1;
 
-  15% {
-    transform: translate(-3px, 0px) rotate(-0.3deg);
-  }
+      @if $i % 2 == 0 { 
+        $sign: 1;
+      }
 
-  20% {
-    transform: translate(4px, 0px) rotate(0.4deg);
-  }
+      $rotation: 8;
+      @if $i < 10 { 
+        $rotation: $i;
+      }
 
-  25% {
-    transform: translate(-5px, 0px) rotate(-0.5deg);
-  }
-
-  30% {
-    transform: translate(6px, 0px) rotate(0.6deg);
-  }
-
-  35% {
-    transform: translate(-7px, 0px) rotate(-0.7deg);
-  }
-
-  40% {
-    transform: translate(8px, 0px) rotate(0.8deg);
-  }
-
-  45% {
-   transform: translate(-9px, 0px) rotate(-0.8deg); 
-  }
-
-  50% {
-    transform: translate(10px, 0px) rotate(0.8deg);
-  }
-
-  55% {
-    transform: translate(-11px, 0px) rotate(-0.8deg);
-  }
-
-  60% {
-    transform: translate(12px, 0px) rotate(0.8deg);
-  }
-
-  65% {
-    transform: translate(-13px, 0px) rotate(-0.8deg);
-  }
-
-  70% {
-    transform: translate(14px, 0px) rotate(0.8deg);
-  }
-
-  75% {
-    transform: translate(-15px, 0px) rotate(-0.8deg);
-  }
-
-  80% {
-    transform: translate(16px, 0px) rotate(0.8deg);
-  }
-
-  85% {
-    transform: translate(-17px, 0px) rotate(-0.8deg);
-  }
-
-  90% {
-    transform: translate(18px, 0px) rotate(0.8deg);
-  }
-
-  95% {
-    transform: translate(-19px, 0px) rotate(-0.8deg);
-  }
-
-  100% {
-    transform: translate(0px, 0px) rotate(0deg);
+      @if $i != 100 { 
+        transform: translate($sign * $i * 2px, 0) rotate($sign * $rotation + deg);
+      } @else {
+        transform: translate(0, 0) rotate(0deg);
+      }
+      
+    } 
   }
 
 }
@@ -101,6 +41,6 @@
 .intensifies {
   animation-name: intensifies;
   animation-timing-function: ease-in;
-  animation-duration: 1s;
+  animation-duration: 10s;
   transform-origin: bottom middle;
 }
