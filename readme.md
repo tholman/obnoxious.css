@@ -4,4 +4,5 @@
 - Intensifies
 - Barrel Roll
 - Shake it
+- Strobe
 

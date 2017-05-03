@@ -1,0 +1,22 @@
+{
+  "name": "obnoxious.css",
+  "version": "3.5.2",
+  "main": "obnoxious.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tholman/obnoxious.css.git"
+  },
+  "author": {
+    "name": "Tim Holman"
+  },
+  "homepage": "http://tholman.com/obnoxious",
+  "license": "MIT",
+  "style": "./obnoxious.css",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^1.2.2"
+  }
+}
