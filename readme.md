@@ -1,6 +1,6 @@
 ## Obnoxious.CSS
 
-Obnoxious CSS is an animation set for the strong of heart, but weak of mind.
+Obnoxious CSS is an animation set for the strong of heart, but weak of mind. Check it [out](http://tholman.com/obnoxious).
 
 ### How to use
 
