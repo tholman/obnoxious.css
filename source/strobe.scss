@@ -1,0 +1,31 @@
+@keyframes strobe {
+
+
+  @for $i from 0 through 100 {
+    
+    #{$i * 1%} {
+
+      $opacity: 0;
+      @if $i % 2 == 0 { 
+        $opacity: 1;
+      }
+
+      opacity: $opacity;
+
+      // Final frame is set back to 0
+      @if $i != 100 { 
+        transform: scale(1 + ($i / 10));
+      } @else {
+        transform: 1;
+      }
+      
+    } 
+  }
+
+}
+
+.strobe {
+  animation-timing-function: ease-in-out;
+  animation-name: strobe;
+  animation-duration: 6s;
+}
