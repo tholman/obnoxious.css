@@ -25,6 +25,7 @@ body {
 
 .center h1 {
   font-size: 70px;
+  position: relative;
   margin: 0px;
 }
 
@@ -89,6 +90,7 @@ button {
   background: #fff;
   font-family: monospace;
   cursor: pointer;
+  outline: 0px;
 }
 
 button:hover,
