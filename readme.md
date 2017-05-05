@@ -6,7 +6,7 @@ Obnoxious CSS is an animation set for the strong of heart, but weak of mind. Che
 
 To use, add the obnoxious.css stylesheet to the `<head>` of your document
 
-```
+```html
 <head>
   <link rel="stylesheet" href="/path/to/obnoxious.css">
 </head>
@@ -24,7 +24,7 @@ These are:
 You can see these animations live [here](http://tholman.com/obnoxious).
 
 For example: 
-```
+```html
  <h1 class="animated intensifies">OMG!</h1>
 ```
 
