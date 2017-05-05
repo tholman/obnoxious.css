@@ -114,10 +114,44 @@ select:hover {
 }
     
 .center .links a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 iframe {
-    margin-left: 14px;
-    margin-bottom: -5px;
+  margin-left: 14px;
+  margin-bottom: -5px;
+}
+
+
+@media (max-width: 900px) {
+
+  .center h1 {
+    font-size: 50px;
+  }
+
+  .center .links a, .center .links iframe {
+    display: block;
+    margin: auto;
+    margin-bottom: 12px;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .center h1 {
+    font-size: 26px;
+  }
+
+  .center .description {
+    font-size: 14px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
 }
