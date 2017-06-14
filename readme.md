@@ -38,8 +38,6 @@ For example:
 
 ### License
 
-License
-
 The MIT License (MIT)
 
 Copyright (C) 2017 ~ Tim Holman ~ timothy.w.holman@gmail.com
